@@ -424,7 +424,7 @@ class QuickBooks_XML
 	 * @param boolean $for_qbxml		
 	 * @return string
 	 */
-	static public function decode($str, $for_qbxml = true)
+	static public function decode($str = '', $for_qbxml = true)
 	{
 		$transform = array(
 			'&lt;' => '<', 

@@ -145,7 +145,7 @@ class QuickBooks_XML_Backend_Builtin implements QuickBooks_XML_Backend
 	 * 
 	 * @param string $xml
 	 * @param QuickBooks_XML_Node $root
-	 * @return void
+	 * @return bool
 	 */
 	protected function _parseHelper($xml, &$Root, &$errnum, &$errmsg, $indent = 0)
 	{
@@ -362,7 +362,7 @@ class QuickBooks_XML_Backend_Builtin implements QuickBooks_XML_Backend
 			}
 
 			$length = $node[3];
-			$payload = $node[4];
+			$payload = $node[4] ?? '';
 
 			$tmp = '';
 			$attributes = array();
