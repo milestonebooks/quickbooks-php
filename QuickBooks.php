@@ -272,9 +272,7 @@ define('QUICKBOOKS_SOAPSERVER_BUILTIN', 'builtin');
  * 
  * @var string
  */
-/*
 define('QUICKBOOKS_INTERACTIVE_MODE', 'Interactive mode');
-*/
 
 /**
  * 
