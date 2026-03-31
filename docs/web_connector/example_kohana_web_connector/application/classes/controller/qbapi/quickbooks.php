@@ -26,7 +26,7 @@ class Controller_Qbapi_Quickbooks extends Controller {
 		// Security checking goes in here
 
 		//Turn on error reporting
-		error_reporting(E_ALL | E_STRICT);
+		error_reporting(E_ALL);
 		//set the content type
 	 	$this->response->headers('Content-Type', 'text/xml');
 	 	//set the timezone	

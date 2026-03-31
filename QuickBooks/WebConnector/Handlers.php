@@ -336,15 +336,15 @@ class QuickBooks_WebConnector_Handlers
 			$config['deny_remote_addr'] = array( $config['deny_remote_addr'] );
 		}
 
-		$config['autoadd_missing_requestid'] = (boolean) $config['autoadd_missing_requestid'];
-		$config['check_valid_requestid'] = (boolean) $config['check_valid_requestid'];
-		$config['map_application_identifiers'] = (boolean) $config['map_application_identifiers'];
-		$config['convert_unix_newlines'] = (boolean) $config['convert_unix_newlines'];
+		$config['autoadd_missing_requestid'] = (bool) $config['autoadd_missing_requestid'];
+		$config['check_valid_requestid'] = (bool) $config['check_valid_requestid'];
+		$config['map_application_identifiers'] = (bool) $config['map_application_identifiers'];
+		$config['convert_unix_newlines'] = (bool) $config['convert_unix_newlines'];
 
-		$config['deny_concurrent_logins'] = (boolean) $config['deny_concurrent_logins'];
+		$config['deny_concurrent_logins'] = (bool) $config['deny_concurrent_logins'];
 		$config['deny_concurrent_timeout'] = (int) max(1, $config['deny_concurrent_timeout']);
 
-		$config['deny_reallyfast_logins'] = (boolean) $config['deny_reallyfast_logins'];
+		$config['deny_reallyfast_logins'] = (bool) $config['deny_reallyfast_logins'];
 		$config['deny_reallyfast_timeout'] = (int) max(1, $config['deny_reallyfast_timeout']);
 
 		return $config;
@@ -424,7 +424,7 @@ class QuickBooks_WebConnector_Handlers
 				//print_r($next);
 				//exit;
 
-				// (boolean) $next['replace']
+				// (bool) $next['replace']
 				// 							$user, $action, $ident, $replace = true, $priority = 0, $extra = null, $qbxml = null
 				$this->_driver->queueEnqueue($user, $next['qb_action'], $next['ident'], true, (int) $next['priority'], $extra, $next['qbxml']);
 			}

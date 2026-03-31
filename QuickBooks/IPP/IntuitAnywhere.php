@@ -100,7 +100,7 @@ class QuickBooks_IPP_IntuitAnywhere
 	 */
 	public function useDebugMode($true_or_false)
 	{
-		$this->_debug = (boolean) $true_or_false;
+		$this->_debug = (bool) $true_or_false;
 	}
 
 	/**
@@ -309,7 +309,6 @@ class QuickBooks_IPP_IntuitAnywhere
 					));
 				curl_exec($ch);
 				$info = curl_getinfo($ch);
-				curl_close($ch);
 			}
 
 			// Also try to revoke the refresh token
@@ -322,7 +321,6 @@ class QuickBooks_IPP_IntuitAnywhere
 				));
 			$retr = curl_exec($ch);
 			$info = curl_getinfo($ch);
-			curl_close($ch);
 
 			if ($info['http_code'] == 200 or $force)
 			{

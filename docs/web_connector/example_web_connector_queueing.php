@@ -15,7 +15,7 @@
  
 // Error reporting for easier debugging
 ini_set('display_errors', true);
-error_reporting(E_ALL | E_STRICT);
+error_reporting(E_ALL);
  
 // Require the queueuing class
 require_once '../QuickBooks.php';

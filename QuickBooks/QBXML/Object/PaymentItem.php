@@ -175,7 +175,7 @@ class QuickBooks_QBXML_Object_PaymentItem extends QuickBooks_QBXML_Object
 		
 		if (!is_null($enable))
 		{
-			$this->_is_sales_and_purchase = (boolean) $enable;
+			$this->_is_sales_and_purchase = (bool) $enable;
 		}
 		
 		return $current;
@@ -193,7 +193,7 @@ class QuickBooks_QBXML_Object_PaymentItem extends QuickBooks_QBXML_Object
 		
 		if (!is_null($enable))
 		{
-			$this->_is_sales_and_purchase = ! (boolean) $enable;
+			$this->_is_sales_and_purchase = ! (bool) $enable;
 		} 
 		
 		return $current;

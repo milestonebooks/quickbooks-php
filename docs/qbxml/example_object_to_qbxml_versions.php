@@ -20,7 +20,7 @@ header('Content-Type: text/plain');
 
 // Error reporting
 ini_set('display_errors', 1);
-error_reporting(E_ALL | E_STRICT);
+error_reporting(E_ALL);
 
 // Require the QuickBooks libraries
 require_once '../QuickBooks.php';

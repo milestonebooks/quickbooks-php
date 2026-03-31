@@ -21,7 +21,7 @@ if (function_exists('date_default_timezone_set'))
 }
 
 // I always program in E_STRICT error mode... 
-error_reporting(E_ALL | E_STRICT);
+error_reporting(E_ALL);
 
 // Require the framework
 require_once dirname(__FILE__) . '/../../QuickBooks.php';

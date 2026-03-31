@@ -24,7 +24,7 @@ if (function_exists('date_default_timezone_set'))
 }
 
 // Error reporting for easier debugging
-error_reporting(E_ALL | E_STRICT);
+error_reporting(E_ALL);
 ini_set('display_errors', true);
 
 // Require the framework

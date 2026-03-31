@@ -438,7 +438,7 @@ class QuickBooks_MerchantService
 	 */
 	public function useTestEnvironment($yes_or_no)
 	{
-		$this->_test = (boolean) $yes_or_no;
+		$this->_test = (bool) $yes_or_no;
 	}
 	
 	/**
@@ -449,7 +449,7 @@ class QuickBooks_MerchantService
 	 */
 	public function useLiveEnvironment($yes_or_no)
 	{
-		$this->_test = ! (boolean) $yes_or_no;
+		$this->_test = ! (bool) $yes_or_no;
 	}
 	
 	/**
@@ -460,7 +460,7 @@ class QuickBooks_MerchantService
 	 */
 	public function useMasking($yes_or_no)
 	{
-		$this->_masking = (boolean) $yes_or_no;
+		$this->_masking = (bool) $yes_or_no;
 	}
 	
 	/**
@@ -474,7 +474,7 @@ class QuickBooks_MerchantService
 	 */
 	public function useDebugMode($yes_or_no)
 	{
-		$this->_debug = (boolean) $yes_or_no;
+		$this->_debug = (bool) $yes_or_no;
 	}
 	
 	protected function _extractTagContents($tag, $data)

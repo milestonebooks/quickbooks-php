@@ -371,7 +371,7 @@ class QuickBooks_QBXML_Object_SalesOrder extends QuickBooks_QBXML_Object
 	
 	public function setIsPending($pending)
 	{
-		return $this->set('IsPending', (boolean) $pending);
+		return $this->set('IsPending', (bool) $pending);
 	}
 	
 	public function getIsPending()

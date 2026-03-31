@@ -567,7 +567,7 @@ class QuickBooks_IPP
 	 */
 	public function useIDSParser($true_or_false)
 	{
-		$this->_ids_parser = (boolean) $true_or_false;
+		$this->_ids_parser = (bool) $true_or_false;
 		return $this->_ids_parser;
 	}
 
@@ -972,7 +972,7 @@ class QuickBooks_IPP
 	 */
 	public function useMasking($yes_or_no)
 	{
-		$this->_masking = (boolean) $yes_or_no;
+		$this->_masking = (bool) $yes_or_no;
 	}
 
 	/**
@@ -986,7 +986,7 @@ class QuickBooks_IPP
 	 */
 	public function useDebugMode($yes_or_no)
 	{
-		$this->_debug = (boolean) $yes_or_no;
+		$this->_debug = (bool) $yes_or_no;
 	}
 
 

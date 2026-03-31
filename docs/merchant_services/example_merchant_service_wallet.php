@@ -13,7 +13,7 @@
 header('Content-Type: text/plain');
 
 // I always program in E_STRICT error mode... 
-error_reporting(E_ALL | E_STRICT);
+error_reporting(E_ALL);
 ini_set('display_errors', true);
 
 // Include the QuickBooks files

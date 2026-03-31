@@ -15,7 +15,7 @@ ini_set('include_path', ini_get('include_path') . PATH_SEPARATOR . '/Users/keith
 
 // error reporting
 ini_set('display_errors', 1);
-error_reporting(E_ALL | E_STRICT);
+error_reporting(E_ALL);
 
 /**  
  * Require the QuickBooks framework code

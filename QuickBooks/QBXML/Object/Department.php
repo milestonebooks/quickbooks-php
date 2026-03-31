@@ -118,7 +118,7 @@ class QuickBooks_QBXML_Object_Department extends QuickBooks_QBXML_Object
 	 */
 	public function setIsActive($value)
 	{
-		return $this->set('IsActive', (boolean) $value);
+		return $this->set('IsActive', (bool) $value);
 	}
 	
 	/**

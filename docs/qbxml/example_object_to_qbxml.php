@@ -16,7 +16,7 @@ header('Content-Type: text/plain');
 
 // error reporting
 ini_set('display_errors', 1);
-error_reporting(E_ALL | E_STRICT);
+error_reporting(E_ALL);
 
 // QuickBooks framework classes
 require_once '../QuickBooks.php';

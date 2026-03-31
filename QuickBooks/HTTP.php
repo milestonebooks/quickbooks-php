@@ -154,12 +154,12 @@ class QuickBooks_HTTP
 
 	public function verifyPeer($yes_or_no)
 	{
-		$this->_verify_peer = (boolean) $yes_or_no;
+		$this->_verify_peer = (bool) $yes_or_no;
 	}
 
 	public function verifyHost($yes_or_no)
 	{
-		$this->_verify_host = (boolean) $yes_or_no;
+		$this->_verify_host = (bool) $yes_or_no;
 	}
 
 	public function setHeaders($arr)
@@ -189,7 +189,7 @@ class QuickBooks_HTTP
 	 */
 	public function returnHeaders($return)
 	{
-		$this->_return_headers = (boolean) $return;
+		$this->_return_headers = (bool) $return;
 	}
 
 	public function setHeader($key, $value)
@@ -286,7 +286,7 @@ class QuickBooks_HTTP
 	public function useDebugMode($yes_or_no)
 	{
 		$prev = $this->_debug;
-		$this->_debug = (boolean) $yes_or_no;
+		$this->_debug = (bool) $yes_or_no;
 
 		return $prev;
 	}
@@ -299,13 +299,13 @@ class QuickBooks_HTTP
 	 */
 	public function useMasking($yes_or_no)
 	{
-		$this->_masking = (boolean) $yes_or_no;
+		$this->_masking = (bool) $yes_or_no;
 	}
 
 	public function useTestEnvironment($yes_or_no)
 	{
 		$prev = $this->_test;
-		$this->_test = (boolean) $yes_or_no;
+		$this->_test = (bool) $yes_or_no;
 
 		return $prev;
 	}
@@ -313,7 +313,7 @@ class QuickBooks_HTTP
 	public function useLiveEnvironment($yes_or_no)
 	{
 		$prev = $this->_test;
-		$this->_test = ! (boolean) $yes_or_no;
+		$this->_test = ! (bool) $yes_or_no;
 
 		return $prev;
 	}
@@ -438,12 +438,12 @@ class QuickBooks_HTTP
 	 */
 	public function setSynchronous($yes_or_no)
 	{
-		$this->_sync = (boolean) $yes_or_no;
+		$this->_sync = (bool) $yes_or_no;
 	}
 
 	public function setAsynchronous($yes_or_no)
 	{
-		$this->_sync = !( (boolean) $yes_or_no);
+		$this->_sync = !( (bool) $yes_or_no);
 	}
 
 	/**
@@ -621,9 +621,6 @@ class QuickBooks_HTTP
 
 			return false;
 		}
-
-		// Close the connection
-		@curl_close($ch);
 
 		return $response;
 	}

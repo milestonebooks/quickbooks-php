@@ -2,7 +2,7 @@
 
 // Error reporting
 header('Content-Type: text/plain');
-error_reporting(E_ALL | E_STRICT);
+error_reporting(E_ALL);
 ini_set('display_errors', 1);
 ini_set('include_path', ini_get('include_path') . PATH_SEPARATOR . '/Users/kpalmer/Projects/QuickBooks/');
 

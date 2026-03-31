@@ -25,7 +25,7 @@ if (function_exists('date_default_timezone_set'))
 }
 
 // I always program in E_STRICT error mode... 
-error_reporting(E_ALL | E_STRICT);
+error_reporting(E_ALL);
 
 // There are some constants you can define to override some default... 
 //define('QUICKBOOKS_DRIVER_SQL_MYSQL_PREFIX', 'myqb_');

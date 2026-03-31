@@ -320,8 +320,6 @@ class QuickBooks_IPP_OAuthv1
 		$signature = null;
 		$retr = openssl_sign($sbs, $signature, $res);
 
-		openssl_free_key($res);
-
 		return array(
 			0 => $sbs,
 			1 => base64_encode($signature),

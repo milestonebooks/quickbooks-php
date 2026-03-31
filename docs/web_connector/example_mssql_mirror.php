@@ -25,7 +25,7 @@ $username = 'quickbooks';
 $password = 'password';
 
 // I always program in E_STRICT error mode... 
-error_reporting(E_ALL | E_STRICT);
+error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
 // The DSN-style connection string to the Microsoft SQL Server

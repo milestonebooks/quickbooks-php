@@ -80,7 +80,7 @@ class QuickBooks_IPP_User
 	
 	public function isVerified()
 	{
-		return (boolean) $this->_is_verified;
+		return (bool) $this->_is_verified;
 	}
 	
 	public function isAnonymous()
